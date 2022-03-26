@@ -1,27 +1,6 @@
-import { StyleSheet, Dimensions } from 'react-native';
-
-
-const width = Dimensions.get('screen').width;
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-    topImage: {
-        width: '100%',
-        height: 578 / 768 * width,
-    },
-    title: {
-        width: '100%',
-        position: 'absolute',
-        textAlign: 'center',
-        fontSize: 16,
-        fontWeight: 'bold',
-        lineHeight: 26,
-        color: 'white',
-        padding: 16
-    }, 
-    container: {
-        paddingVertical: 8,
-        paddingHorizontal: 16,
-    },
     name: {
         color: '#464646',
         fontSize: 26,
@@ -52,5 +31,18 @@ export const styles = StyleSheet.create({
         lineHeight: 42,
         fontWeight: 'bold',
         marginTop: 8
+    },
+    button: {
+        marginTop: 16,
+        backgroundColor: '#2A9F75',
+        paddingVertical: 16,
+        borderRadius: 6,
+    },
+    textButton: {
+        color: 'white',
+        textAlign: 'center',
+        fontSize: 16,
+        lineHeight: 26,
+        fontWeight: 'bold'
     }
-})
+});
